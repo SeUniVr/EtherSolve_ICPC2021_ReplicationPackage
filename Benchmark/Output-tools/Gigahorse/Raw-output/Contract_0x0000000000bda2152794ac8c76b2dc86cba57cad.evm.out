@@ -1,0 +1,57 @@
+
+Begin block 0x0
+prev = {}, next = {'0xf', '0xb'}
+----------------------------------
+function __function_selector__()
+Block 0x0
+0x0: v0(0x80) = CONST 
+0x2: v2(0x40) = CONST 
+0x4: MSTORE v2(0x40) v0(0x80)
+0x5: v5 = CALLVALUE 
+0x7: v7 = ISZERO v5
+0x8: v8(0xf) = CONST 
+0xa: JUMPI v8(0xf) v7
+----------------------------------
+
+Begin block 0xb
+prev = {'0x0'}, next = {}
+----------------------------------
+Block 0xb
+0xb: vb(0x0) = CONST 
+0xe: REVERT vb(0x0) vb(0x0)
+----------------------------------
+
+Begin block 0xf
+prev = {'0x0'}, next = {'0x32', '0x27'}
+----------------------------------
+Block 0xf
+0x11: v11 = CALLER 
+0x12: v12(0x11df015e8ad00d7b2486a88c2eb8210) = CONST 
+0x23: v23 = EQ v12(0x11df015e8ad00d7b2486a88c2eb8210) v11
+0x24: v24(0x32) = CONST 
+0x26: JUMPI v24(0x32) v23
+----------------------------------
+
+Begin block 0x27
+prev = {'0xf'}, next = {}
+----------------------------------
+Block 0x27
+0x27: v27(0x0) = CONST 
+0x29: v29 = SLOAD v27(0x0)
+0x2a: v2a(0x0) = CONST 
+0x2c: MSTORE v2a(0x0) v29
+0x2d: v2d(0x20) = CONST 
+0x2f: v2f(0x0) = CONST 
+0x31: RETURN v2f(0x0) v2d(0x20)
+----------------------------------
+
+Begin block 0x32
+prev = {'0xf'}, next = {}
+----------------------------------
+Block 0x32
+0x33: v33(0x0) = CONST 
+0x35: v35 = CALLDATALOAD v33(0x0)
+0x36: v36(0x0) = CONST 
+0x38: SSTORE v36(0x0) v35
+0x39: STOP 
+----------------------------------

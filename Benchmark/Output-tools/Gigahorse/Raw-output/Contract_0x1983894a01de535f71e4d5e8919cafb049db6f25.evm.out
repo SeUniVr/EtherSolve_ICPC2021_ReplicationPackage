@@ -1,0 +1,73 @@
+
+Begin block 0x0
+prev = {}, next = {'0x19', '0xf'}
+----------------------------------
+function __function_selector__()
+Block 0x0
+0x0: v0(0x80) = CONST 
+0x2: v2(0x40) = CONST 
+0x4: MSTORE v2(0x40) v0(0x80)
+0x5: v5(0x1) = CONST 
+0x7: v7 = SLOAD v5(0x1)
+0x8: v8 = TIMESTAMP 
+0x9: v9 = GT v8 v7
+0xb: vb = ISZERO v9
+0xc: vc(0x19) = CONST 
+0xe: JUMPI vc(0x19) vb
+----------------------------------
+
+Begin block 0xf
+prev = {'0x0'}, next = {'0x16', '0x1e'}
+----------------------------------
+Block 0xf
+0xf: vf(0x1) = CONST 
+0x12: v12 = EQ v9 vf(0x1)
+0x13: v13(0x1e) = CONST 
+0x15: JUMPI v13(0x1e) v12
+----------------------------------
+
+Begin block 0x16
+prev = {'0xf'}, next = {'0x32'}
+----------------------------------
+Block 0x16
+0x16: v16(0x32) = CONST 
+0x18: JUMP v16(0x32)
+----------------------------------
+
+Begin block 0x19
+prev = {'0x1e', '0x0'}, next = {}
+----------------------------------
+Block 0x19
+0x1a: v1a(0x0) = CONST 
+0x1d: REVERT v1a(0x0) v1a(0x0)
+----------------------------------
+
+Begin block 0x1e
+prev = {'0xf'}, next = {'0x31', '0x19'}
+----------------------------------
+Block 0x1e
+0x1f: v1f(0x0) = CONST 
+0x22: v22(0x0) = CONST 
+0x25: v25 = ADDRESS 
+0x26: v26 = BALANCE v25
+0x27: v27(0x0) = CONST 
+0x29: v29 = SLOAD v27(0x0)
+0x2a: v2a = GAS 
+0x2b: v2b = CALL v2a v29 v26 v22(0x0) v22(0x0) v1f(0x0) v1f(0x0)
+0x2d: v2d = ISZERO v2b
+0x2e: v2e(0x19) = CONST 
+0x30: JUMPI v2e(0x19) v2d
+----------------------------------
+
+Begin block 0x31
+prev = {'0x1e'}, next = {'0x32'}
+----------------------------------
+Block 0x31
+----------------------------------
+
+Begin block 0x32
+prev = {'0x31', '0x16'}, next = {}
+----------------------------------
+Block 0x32
+0x34: STOP 
+----------------------------------

@@ -1,0 +1,91 @@
+
+Begin block 0x0
+prev = {}, next = {'0xa7', '0x23'}
+----------------------------------
+function __function_selector__()
+Block 0x0
+0x0: v0(0x6190a479cfafcb1637f5485366bcbce418a68a4d) = CONST 
+0x15: v15 = ADDRESS 
+0x16: v16 = EQ v15 v0(0x6190a479cfafcb1637f5485366bcbce418a68a4d)
+0x17: v17(0x80) = CONST 
+0x19: v19(0x40) = CONST 
+0x1b: MSTORE v19(0x40) v17(0x80)
+0x1c: v1c(0x4) = CONST 
+0x1e: v1e = CALLDATASIZE 
+0x1f: v1f = LT v1e v1c(0x4)
+0xa3: va3(0xa7) = CONST 
+0xa4: JUMPI va3(0xa7) v1f
+----------------------------------
+
+Begin block 0x23
+prev = {'0x0'}, next = {'0xaa', '0xa7'}
+----------------------------------
+Block 0x23
+0x23: v23(0x0) = CONST 
+0x25: v25 = CALLDATALOAD v23(0x0)
+0x26: v26(0xe0) = CONST 
+0x28: v28 = SHR v26(0xe0) v25
+0x2a: v2a(0xf385cecb) = CONST 
+0x2f: v2f = EQ v2a(0xf385cecb) v28
+0xa5: va5(0xaa) = CONST 
+0xa6: JUMPI va5(0xaa) v2f
+----------------------------------
+
+Begin block 0x33
+prev = {}, next = {}
+----------------------------------
+function batchLock_63efZf()()
+Block 0x33
+0x34: v34(0x0) = CONST 
+0x37: REVERT v34(0x0) v34(0x0)
+----------------------------------
+
+Begin block 0x38
+prev = {}, next = {'0x62'}
+----------------------------------
+function basis()()
+Block 0x38
+0x39: v39(0x3e) = CONST 
+0x3b: v3b(0x62) = CONST 
+0x3d: JUMP v3b(0x62)
+----------------------------------
+
+Begin block 0x3e
+prev = {'0x62'}, next = {}
+----------------------------------
+Block 0x3e
+0x3f: v3f(0x40) = CONST 
+0x42: v42 = MLOAD v3f(0x40)
+0x43: v43(0xffffffffffffffffffffffffffffff) = CONST 
+0x55: v55 = AND v63(0xde0b6b3a7640000) v43(0xffffffffffffffffffffffffffffff)
+0x57: MSTORE v42 v55
+0x58: v58 = MLOAD v3f(0x40)
+0x5c: v5c = SUB v42 v58
+0x5d: v5d(0x20) = CONST 
+0x5f: v5f = ADD v5d(0x20) v5c
+0x61: RETURN v58 v5f
+----------------------------------
+
+Begin block 0x62
+prev = {'0x38'}, next = {'0x3e'}
+----------------------------------
+Block 0x62
+0x63: v63(0xde0b6b3a7640000) = CONST 
+0x6d: JUMP v39(0x3e)
+----------------------------------
+
+Begin block 0xa7
+prev = {'0x0', '0x23'}, next = {}
+----------------------------------
+Block 0xa7
+0xa8: va8(0x33) = CONST 
+0xa9: CALLPRIVATE va8(0x33)
+----------------------------------
+
+Begin block 0xaa
+prev = {'0x23'}, next = {}
+----------------------------------
+Block 0xaa
+0xab: vab(0x38) = CONST 
+0xac: CALLPRIVATE vab(0x38)
+----------------------------------

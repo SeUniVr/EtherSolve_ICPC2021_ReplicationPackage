@@ -1,0 +1,497 @@
+
+Begin block 0x0
+prev = {}, next = {'0xd', '0x417'}
+----------------------------------
+function __function_selector__()
+Block 0x0
+0x0: v0(0x80) = CONST 
+0x2: v2(0x40) = CONST 
+0x4: MSTORE v2(0x40) v0(0x80)
+0x5: v5(0x4) = CONST 
+0x7: v7 = CALLDATASIZE 
+0x8: v8 = LT v7 v5(0x4)
+0x40f: v40f(0x417) = CONST 
+0x410: JUMPI v40f(0x417) v8
+----------------------------------
+
+Begin block 0xd
+prev = {'0x0'}, next = {'0x41a', '0x41'}
+----------------------------------
+Block 0xd
+0xd: vd(0x0) = CONST 
+0xf: vf = CALLDATALOAD vd(0x0)
+0x10: v10(0x100000000000000000000000000000000000000000000000000000000) = CONST 
+0x2f: v2f = DIV vf v10(0x100000000000000000000000000000000000000000000000000000000)
+0x30: v30(0xffffffff) = CONST 
+0x35: v35 = AND v30(0xffffffff) v2f
+0x37: v37(0x18160ddd) = CONST 
+0x3c: v3c = EQ v37(0x18160ddd) v35
+0x411: v411(0x41a) = CONST 
+0x412: JUMPI v411(0x41a) v3c
+----------------------------------
+
+Begin block 0x41
+prev = {'0xd'}, next = {'0x41d', '0x4c'}
+----------------------------------
+Block 0x41
+0x42: v42(0x70a08231) = CONST 
+0x47: v47 = EQ v42(0x70a08231) v35
+0x413: v413(0x41d) = CONST 
+0x414: JUMPI v413(0x41d) v47
+----------------------------------
+
+Begin block 0x4c
+prev = {'0x41'}, next = {'0x417', '0x420'}
+----------------------------------
+Block 0x4c
+0x4d: v4d(0xa9059cbb) = CONST 
+0x52: v52 = EQ v4d(0xa9059cbb) v35
+0x415: v415(0x420) = CONST 
+0x416: JUMPI v415(0x420) v52
+----------------------------------
+
+Begin block 0x57
+prev = {}, next = {}
+----------------------------------
+function batchLock_63efZf()()
+Block 0x57
+0x58: v58(0x0) = CONST 
+0x5b: REVERT v58(0x0) v58(0x0)
+----------------------------------
+
+Begin block 0x5c
+prev = {}, next = {'0x64', '0x68'}
+----------------------------------
+function totalSupply()()
+Block 0x5c
+0x5d: v5d = CALLVALUE 
+0x5f: v5f = ISZERO v5d
+0x60: v60(0x68) = CONST 
+0x63: JUMPI v60(0x68) v5f
+----------------------------------
+
+Begin block 0x64
+prev = {'0x5c'}, next = {}
+----------------------------------
+Block 0x64
+0x64: v64(0x0) = CONST 
+0x67: REVERT v64(0x0) v64(0x0)
+----------------------------------
+
+Begin block 0x68
+prev = {'0x5c'}, next = {'0x143'}
+----------------------------------
+Block 0x68
+0x6a: v6a(0x71) = CONST 
+0x6d: v6d(0x143) = CONST 
+0x70: JUMP v6d(0x143)
+----------------------------------
+
+Begin block 0x71
+prev = {'0x143'}, next = {}
+----------------------------------
+Block 0x71
+0x72: v72(0x40) = CONST 
+0x74: v74 = MLOAD v72(0x40)
+0x78: MSTORE v74 v148
+0x79: v79(0x20) = CONST 
+0x7b: v7b = ADD v79(0x20) v74
+0x7f: v7f(0x40) = CONST 
+0x81: v81 = MLOAD v7f(0x40)
+0x84: v84 = SUB v7b v81
+0x86: RETURN v81 v84
+----------------------------------
+
+Begin block 0x87
+prev = {}, next = {'0x8f', '0x93'}
+----------------------------------
+function balanceOf(address)()
+Block 0x87
+0x88: v88 = CALLVALUE 
+0x8a: v8a = ISZERO v88
+0x8b: v8b(0x93) = CONST 
+0x8e: JUMPI v8b(0x93) v8a
+----------------------------------
+
+Begin block 0x8f
+prev = {'0x87'}, next = {}
+----------------------------------
+Block 0x8f
+0x8f: v8f(0x0) = CONST 
+0x92: REVERT v8f(0x0) v8f(0x0)
+----------------------------------
+
+Begin block 0x93
+prev = {'0x87'}, next = {'0x14d'}
+----------------------------------
+Block 0x93
+0x95: v95(0xc8) = CONST 
+0x98: v98(0x4) = CONST 
+0x9b: v9b = CALLDATASIZE 
+0x9c: v9c = SUB v9b v98(0x4)
+0x9e: v9e = ADD v98(0x4) v9c
+0xa2: va2 = CALLDATALOAD v98(0x4)
+0xa3: va3(0xffffffffffffffffffffffffffffffffffffffff) = CONST 
+0xb8: vb8 = AND va3(0xffffffffffffffffffffffffffffffffffffffff) va2
+0xba: vba(0x20) = CONST 
+0xbc: vbc(0x24) = ADD vba(0x20) v98(0x4)
+0xc4: vc4(0x14d) = CONST 
+0xc7: JUMP vc4(0x14d)
+----------------------------------
+
+Begin block 0xc8
+prev = {'0x14d'}, next = {}
+----------------------------------
+Block 0xc8
+0xc9: vc9(0x40) = CONST 
+0xcb: vcb = MLOAD vc9(0x40)
+0xcf: MSTORE vcb v18e
+0xd0: vd0(0x20) = CONST 
+0xd2: vd2 = ADD vd0(0x20) vcb
+0xd6: vd6(0x40) = CONST 
+0xd8: vd8 = MLOAD vd6(0x40)
+0xdb: vdb = SUB vd2 vd8
+0xdd: RETURN vd8 vdb
+----------------------------------
+
+Begin block 0xde
+prev = {}, next = {'0xe6', '0xea'}
+----------------------------------
+function transfer(address,uint256)()
+Block 0xde
+0xdf: vdf = CALLVALUE 
+0xe1: ve1 = ISZERO vdf
+0xe2: ve2(0xea) = CONST 
+0xe5: JUMPI ve2(0xea) ve1
+----------------------------------
+
+Begin block 0xe6
+prev = {'0xde'}, next = {}
+----------------------------------
+Block 0xe6
+0xe6: ve6(0x0) = CONST 
+0xe9: REVERT ve6(0x0) ve6(0x0)
+----------------------------------
+
+Begin block 0xea
+prev = {'0xde'}, next = {'0x195'}
+----------------------------------
+Block 0xea
+0xec: vec(0x129) = CONST 
+0xef: vef(0x4) = CONST 
+0xf2: vf2 = CALLDATASIZE 
+0xf3: vf3 = SUB vf2 vef(0x4)
+0xf5: vf5 = ADD vef(0x4) vf3
+0xf9: vf9 = CALLDATALOAD vef(0x4)
+0xfa: vfa(0xffffffffffffffffffffffffffffffffffffffff) = CONST 
+0x10f: v10f = AND vfa(0xffffffffffffffffffffffffffffffffffffffff) vf9
+0x111: v111(0x20) = CONST 
+0x113: v113(0x24) = ADD v111(0x20) vef(0x4)
+0x119: v119 = CALLDATALOAD v113(0x24)
+0x11b: v11b(0x20) = CONST 
+0x11d: v11d(0x44) = ADD v11b(0x20) v113(0x24)
+0x125: v125(0x195) = CONST 
+0x128: JUMP v125(0x195)
+----------------------------------
+
+Begin block 0x129
+prev = {'0x303'}, next = {}
+----------------------------------
+Block 0x129
+0x12a: v12a(0x40) = CONST 
+0x12c: v12c = MLOAD v12a(0x40)
+0x12f: v12f = ISZERO v3ab(0x1)
+0x130: v130 = ISZERO v12f
+0x131: v131 = ISZERO v130
+0x132: v132 = ISZERO v131
+0x134: MSTORE v12c v132
+0x135: v135(0x20) = CONST 
+0x137: v137 = ADD v135(0x20) v12c
+0x13b: v13b(0x40) = CONST 
+0x13d: v13d = MLOAD v13b(0x40)
+0x140: v140 = SUB v137 v13d
+0x142: RETURN v13d v140
+----------------------------------
+
+Begin block 0x143
+prev = {'0x68'}, next = {'0x71'}
+----------------------------------
+Block 0x143
+0x144: v144(0x0) = CONST 
+0x146: v146(0x1) = CONST 
+0x148: v148 = SLOAD v146(0x1)
+0x14c: JUMP v6a(0x71)
+----------------------------------
+
+Begin block 0x14d
+prev = {'0x93'}, next = {'0xc8'}
+----------------------------------
+Block 0x14d
+0x14e: v14e(0x0) = CONST 
+0x151: v151(0x0) = CONST 
+0x154: v154(0xffffffffffffffffffffffffffffffffffffffff) = CONST 
+0x169: v169 = AND v154(0xffffffffffffffffffffffffffffffffffffffff) vb8
+0x16a: v16a(0xffffffffffffffffffffffffffffffffffffffff) = CONST 
+0x17f: v17f = AND v16a(0xffffffffffffffffffffffffffffffffffffffff) v169
+0x181: MSTORE v151(0x0) v17f
+0x182: v182(0x20) = CONST 
+0x184: v184(0x20) = ADD v182(0x20) v151(0x0)
+0x187: MSTORE v184(0x20) v14e(0x0)
+0x188: v188(0x20) = CONST 
+0x18a: v18a(0x40) = ADD v188(0x20) v184(0x20)
+0x18b: v18b(0x0) = CONST 
+0x18d: v18d = SHA3 v18b(0x0) v18a(0x40)
+0x18e: v18e = SLOAD v18d
+0x194: JUMP v95(0xc8)
+----------------------------------
+
+Begin block 0x195
+prev = {'0xea'}, next = {'0x1d2', '0x1ce'}
+----------------------------------
+Block 0x195
+0x196: v196(0x0) = CONST 
+0x199: v199(0xffffffffffffffffffffffffffffffffffffffff) = CONST 
+0x1ae: v1ae(0x0) = AND v199(0xffffffffffffffffffffffffffffffffffffffff) v196(0x0)
+0x1b0: v1b0(0xffffffffffffffffffffffffffffffffffffffff) = CONST 
+0x1c5: v1c5 = AND v1b0(0xffffffffffffffffffffffffffffffffffffffff) v10f
+0x1c6: v1c6 = EQ v1c5 v1ae(0x0)
+0x1c7: v1c7 = ISZERO v1c6
+0x1c8: v1c8 = ISZERO v1c7
+0x1c9: v1c9 = ISZERO v1c8
+0x1ca: v1ca(0x1d2) = CONST 
+0x1cd: JUMPI v1ca(0x1d2) v1c9
+----------------------------------
+
+Begin block 0x1ce
+prev = {'0x195'}, next = {}
+----------------------------------
+Block 0x1ce
+0x1ce: v1ce(0x0) = CONST 
+0x1d1: REVERT v1ce(0x0) v1ce(0x0)
+----------------------------------
+
+Begin block 0x1d2
+prev = {'0x195'}, next = {'0x21f', '0x21b'}
+----------------------------------
+Block 0x1d2
+0x1d3: v1d3(0x0) = CONST 
+0x1d6: v1d6 = CALLER 
+0x1d7: v1d7(0xffffffffffffffffffffffffffffffffffffffff) = CONST 
+0x1ec: v1ec = AND v1d7(0xffffffffffffffffffffffffffffffffffffffff) v1d6
+0x1ed: v1ed(0xffffffffffffffffffffffffffffffffffffffff) = CONST 
+0x202: v202 = AND v1ed(0xffffffffffffffffffffffffffffffffffffffff) v1ec
+0x204: MSTORE v1d3(0x0) v202
+0x205: v205(0x20) = CONST 
+0x207: v207(0x20) = ADD v205(0x20) v1d3(0x0)
+0x20a: MSTORE v207(0x20) v1d3(0x0)
+0x20b: v20b(0x20) = CONST 
+0x20d: v20d(0x40) = ADD v20b(0x20) v207(0x20)
+0x20e: v20e(0x0) = CONST 
+0x210: v210 = SHA3 v20e(0x0) v20d(0x40)
+0x211: v211 = SLOAD v210
+0x213: v213 = GT v119 v211
+0x214: v214 = ISZERO v213
+0x215: v215 = ISZERO v214
+0x216: v216 = ISZERO v215
+0x217: v217(0x21f) = CONST 
+0x21a: JUMPI v217(0x21f) v216
+----------------------------------
+
+Begin block 0x21b
+prev = {'0x1d2'}, next = {}
+----------------------------------
+Block 0x21b
+0x21b: v21b(0x0) = CONST 
+0x21e: REVERT v21b(0x0) v21b(0x0)
+----------------------------------
+
+Begin block 0x21f
+prev = {'0x1d2'}, next = {'0x3b4'}
+----------------------------------
+Block 0x21f
+0x220: v220(0x270) = CONST 
+0x224: v224(0x0) = CONST 
+0x227: v227 = CALLER 
+0x228: v228(0xffffffffffffffffffffffffffffffffffffffff) = CONST 
+0x23d: v23d = AND v228(0xffffffffffffffffffffffffffffffffffffffff) v227
+0x23e: v23e(0xffffffffffffffffffffffffffffffffffffffff) = CONST 
+0x253: v253 = AND v23e(0xffffffffffffffffffffffffffffffffffffffff) v23d
+0x255: MSTORE v224(0x0) v253
+0x256: v256(0x20) = CONST 
+0x258: v258(0x20) = ADD v256(0x20) v224(0x0)
+0x25b: MSTORE v258(0x20) v224(0x0)
+0x25c: v25c(0x20) = CONST 
+0x25e: v25e(0x40) = ADD v25c(0x20) v258(0x20)
+0x25f: v25f(0x0) = CONST 
+0x261: v261 = SHA3 v25f(0x0) v25e(0x40)
+0x262: v262 = SLOAD v261
+0x263: v263(0x3b4) = CONST 
+0x269: v269(0xffffffff) = CONST 
+0x26e: v26e(0x3b4) = AND v269(0xffffffff) v263(0x3b4)
+0x26f: JUMP v26e(0x3b4)
+----------------------------------
+
+Begin block 0x270
+prev = {'0x3c2'}, next = {'0x3cd'}
+----------------------------------
+Block 0x270
+0x271: v271(0x0) = CONST 
+0x274: v274 = CALLER 
+0x275: v275(0xffffffffffffffffffffffffffffffffffffffff) = CONST 
+0x28a: v28a = AND v275(0xffffffffffffffffffffffffffffffffffffffff) v274
+0x28b: v28b(0xffffffffffffffffffffffffffffffffffffffff) = CONST 
+0x2a0: v2a0 = AND v28b(0xffffffffffffffffffffffffffffffffffffffff) v28a
+0x2a2: MSTORE v271(0x0) v2a0
+0x2a3: v2a3(0x20) = CONST 
+0x2a5: v2a5(0x20) = ADD v2a3(0x20) v271(0x0)
+0x2a8: MSTORE v2a5(0x20) v271(0x0)
+0x2a9: v2a9(0x20) = CONST 
+0x2ab: v2ab(0x40) = ADD v2a9(0x20) v2a5(0x20)
+0x2ac: v2ac(0x0) = CONST 
+0x2ae: v2ae = SHA3 v2ac(0x0) v2ab(0x40)
+0x2b1: SSTORE v2ae v3c5
+0x2b3: v2b3(0x303) = CONST 
+0x2b7: v2b7(0x0) = CONST 
+0x2bb: v2bb(0xffffffffffffffffffffffffffffffffffffffff) = CONST 
+0x2d0: v2d0 = AND v2bb(0xffffffffffffffffffffffffffffffffffffffff) v10f
+0x2d1: v2d1(0xffffffffffffffffffffffffffffffffffffffff) = CONST 
+0x2e6: v2e6 = AND v2d1(0xffffffffffffffffffffffffffffffffffffffff) v2d0
+0x2e8: MSTORE v2b7(0x0) v2e6
+0x2e9: v2e9(0x20) = CONST 
+0x2eb: v2eb(0x20) = ADD v2e9(0x20) v2b7(0x0)
+0x2ee: MSTORE v2eb(0x20) v2b7(0x0)
+0x2ef: v2ef(0x20) = CONST 
+0x2f1: v2f1(0x40) = ADD v2ef(0x20) v2eb(0x20)
+0x2f2: v2f2(0x0) = CONST 
+0x2f4: v2f4 = SHA3 v2f2(0x0) v2f1(0x40)
+0x2f5: v2f5 = SLOAD v2f4
+0x2f6: v2f6(0x3cd) = CONST 
+0x2fc: v2fc(0xffffffff) = CONST 
+0x301: v301(0x3cd) = AND v2fc(0xffffffff) v2f6(0x3cd)
+0x302: JUMP v301(0x3cd)
+----------------------------------
+
+Begin block 0x303
+prev = {'0x3e0'}, next = {'0x129'}
+----------------------------------
+Block 0x303
+0x304: v304(0x0) = CONST 
+0x308: v308(0xffffffffffffffffffffffffffffffffffffffff) = CONST 
+0x31d: v31d = AND v308(0xffffffffffffffffffffffffffffffffffffffff) v10f
+0x31e: v31e(0xffffffffffffffffffffffffffffffffffffffff) = CONST 
+0x333: v333 = AND v31e(0xffffffffffffffffffffffffffffffffffffffff) v31d
+0x335: MSTORE v304(0x0) v333
+0x336: v336(0x20) = CONST 
+0x338: v338(0x20) = ADD v336(0x20) v304(0x0)
+0x33b: MSTORE v338(0x20) v304(0x0)
+0x33c: v33c(0x20) = CONST 
+0x33e: v33e(0x40) = ADD v33c(0x20) v338(0x20)
+0x33f: v33f(0x0) = CONST 
+0x341: v341 = SHA3 v33f(0x0) v33e(0x40)
+0x344: SSTORE v341 v3d2
+0x347: v347(0xffffffffffffffffffffffffffffffffffffffff) = CONST 
+0x35c: v35c = AND v347(0xffffffffffffffffffffffffffffffffffffffff) v10f
+0x35d: v35d = CALLER 
+0x35e: v35e(0xffffffffffffffffffffffffffffffffffffffff) = CONST 
+0x373: v373 = AND v35e(0xffffffffffffffffffffffffffffffffffffffff) v35d
+0x374: v374(0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef) = CONST 
+0x396: v396(0x40) = CONST 
+0x398: v398 = MLOAD v396(0x40)
+0x39c: MSTORE v398 v119
+0x39d: v39d(0x20) = CONST 
+0x39f: v39f = ADD v39d(0x20) v398
+0x3a3: v3a3(0x40) = CONST 
+0x3a5: v3a5 = MLOAD v3a3(0x40)
+0x3a8: v3a8 = SUB v39f v3a5
+0x3aa: LOG3 v3a5 v3a8 v374(0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef) v373 v35c
+0x3ab: v3ab(0x1) = CONST 
+0x3b3: JUMP vec(0x129)
+----------------------------------
+
+Begin block 0x3b4
+prev = {'0x21f'}, next = {'0x3c1', '0x3c2'}
+----------------------------------
+Block 0x3b4
+0x3b5: v3b5(0x0) = CONST 
+0x3b9: v3b9 = GT v119 v262
+0x3ba: v3ba = ISZERO v3b9
+0x3bb: v3bb = ISZERO v3ba
+0x3bc: v3bc = ISZERO v3bb
+0x3bd: v3bd(0x3c2) = CONST 
+0x3c0: JUMPI v3bd(0x3c2) v3bc
+----------------------------------
+
+Begin block 0x3c1
+prev = {'0x3b4'}, next = {}
+----------------------------------
+Block 0x3c1
+0x3c1: THROW 
+----------------------------------
+
+Begin block 0x3c2
+prev = {'0x3b4'}, next = {'0x270'}
+----------------------------------
+Block 0x3c2
+0x3c5: v3c5 = SUB v262 v119
+0x3cc: JUMP v220(0x270)
+----------------------------------
+
+Begin block 0x3cd
+prev = {'0x270'}, next = {'0x3e0', '0x3df'}
+----------------------------------
+Block 0x3cd
+0x3ce: v3ce(0x0) = CONST 
+0x3d2: v3d2 = ADD v2f5 v119
+0x3d7: v3d7 = LT v3d2 v2f5
+0x3d8: v3d8 = ISZERO v3d7
+0x3d9: v3d9 = ISZERO v3d8
+0x3da: v3da = ISZERO v3d9
+0x3db: v3db(0x3e0) = CONST 
+0x3de: JUMPI v3db(0x3e0) v3da
+----------------------------------
+
+Begin block 0x3df
+prev = {'0x3cd'}, next = {}
+----------------------------------
+Block 0x3df
+0x3df: THROW 
+----------------------------------
+
+Begin block 0x3e0
+prev = {'0x3cd'}, next = {'0x303'}
+----------------------------------
+Block 0x3e0
+0x3e8: JUMP v2b3(0x303)
+----------------------------------
+
+Begin block 0x417
+prev = {'0x4c', '0x0'}, next = {}
+----------------------------------
+Block 0x417
+0x418: v418(0x57) = CONST 
+0x419: CALLPRIVATE v418(0x57)
+----------------------------------
+
+Begin block 0x41a
+prev = {'0xd'}, next = {}
+----------------------------------
+Block 0x41a
+0x41b: v41b(0x5c) = CONST 
+0x41c: CALLPRIVATE v41b(0x5c)
+----------------------------------
+
+Begin block 0x41d
+prev = {'0x41'}, next = {}
+----------------------------------
+Block 0x41d
+0x41e: v41e(0x87) = CONST 
+0x41f: CALLPRIVATE v41e(0x87)
+----------------------------------
+
+Begin block 0x420
+prev = {'0x4c'}, next = {}
+----------------------------------
+Block 0x420
+0x421: v421(0xde) = CONST 
+0x422: CALLPRIVATE v421(0xde)
+----------------------------------
